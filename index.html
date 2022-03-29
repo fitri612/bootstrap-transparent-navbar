@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap 5 - Transparent Navbar</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
     <style>
       .banner-image {
-        background-image: url('img/banner-img.jpg');
+        background-image: url('img/Group 9.png');
         background-size: cover;
       }
     </style>
@@ -16,7 +17,10 @@
     <!-- Navbar  -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
       <div class="container">
-        <a class="navbar-brand" href="#">Web Zone</a>
+        <div class="logo">
+          <img src="img/twemoji_coconut.png" class="logo-coconut" alt="Coconuts">
+          <a class="navbar-brand" href="#">COCONUTS</a>
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,28 +40,36 @@
               <a class="nav-link text-white" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">About</a>
+              <a class="nav-link text-white" href="#">Discuss</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contact</a>
+              <a class="nav-link text-white" href="#">About Us</a>
             </li>
           </ul>
+          <div class="btn-nav">
+            <button class="btn btn-get" type="submit">GET STARTED</button>
+          </div>
+          
         </div>
       </div>
     </nav>
-
+    
     <!-- Banner Image  -->
     <div
-      class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
+    class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
     >
-      <div class="content text-center">
-        <h1 class="text-white">WEB ZONE</h1>
+    <!-- <div class="content text-center ">
+    </div> -->
+    <div class="content text-center">
+      <h3 class="text-white">Wellcome To</h3>
+      <h1 class="text-white">FORUM DISCUSSION
+        FOR INFORMATION TECHNOLOGY</h1>
+        <div class="desc">
+          <h3 class="desc-text">Join the Questions & Answers forum discussion and build a portfolio at Coconuts</h3>
+        </div>
+        <div class="btn-nav">
+          <button class="btn btn-get" type="submit">LEARN MORE</button>
+        </div>
       </div>
     </div>
 
@@ -111,7 +123,8 @@
       window.addEventListener('scroll', function () {
         if (window.pageYOffset > 100) {
           nav.classList.add('bg-dark', 'shadow');
-        } else {
+        } 
+        else {
           nav.classList.remove('bg-dark', 'shadow');
         }
       });
